@@ -15,7 +15,7 @@ import (
 func main() {
     // Command line flags
     brokerType := flag.String("broker", "kafka", "Broker type: kafka or kinesis")
-    kafkaBrokers := flag.String("kafka-brokers", "localhost:9092", "Comma-separated list of Kafka brokers")
+    kafkaBrokers := flag.String("kafka-brokers", "172.19.245.31:9092", "Comma-separated list of Kafka brokers")
     kafkaTopic := flag.String("kafka-topic", "notifications", "Kafka topic")
     awsRegion := flag.String("aws-region", "us-east-1", "AWS region")
     kinesisStream := flag.String("kinesis-stream", "notifications", "Kinesis stream name")
